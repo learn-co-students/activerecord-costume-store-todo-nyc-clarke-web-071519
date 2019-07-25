@@ -37,15 +37,15 @@ describe "CostumeStore" do
     CostumeStore.create(
       name: "Frankie", 
       location: "580 Broadway",
-      still_in_business: true
+      still_in_buisness: true
     )
     CostumeStore.create(
       name: "Spirit",
       location: "105 Amsterdam Ave",
-      still_in_business: false      
+      still_in_buisness: false      
     )
-    expect(CostumeStore.find_by(name: "Frankie").still_in_business).to eq(true)
-    expect(CostumeStore.find_by(name: "Spirit").still_in_business).to eq(false)
+    expect(CostumeStore.find_by(name: "Frankie").still_in_buisness).to eq(true)
+    expect(CostumeStore.find_by(name: "Spirit").still_in_buisness).to eq(false)
   end
 
   it "has an opening time" do
